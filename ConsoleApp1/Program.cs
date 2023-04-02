@@ -9,6 +9,7 @@ namespace MyApp // Note: actual namespace depends on the project name.
         Task1();
         Task2();
         Task3();
+        Task4();
     }
          public static void Task1()
             {
@@ -58,7 +59,24 @@ namespace MyApp // Note: actual namespace depends on the project name.
             double finalresult = deposit + result;
             Console.WriteLine("Result ="+finalresult);
         }
-
+        public static void Task4()
+        {
+            Console.WriteLine("Vvedite chislo:");
+            int a = int.Parse(Console.ReadLine());
+            if ((a%2 == 0) && (a%3 == 0))
+            {
+                Console.WriteLine("chislo kratno 2 i 3");
+            }
+            else if (a % 2 == 0)
+            {
+                Console.WriteLine("chislo kratno 2");
+            }
+            else if (a % 3 == 0)
+            {
+                Console.WriteLine("chislo kratno 3");
+            }
+            else { Console.WriteLine("chislo ne kratno ni 2 i ne 3"); }
+        }
     }
     
 }
